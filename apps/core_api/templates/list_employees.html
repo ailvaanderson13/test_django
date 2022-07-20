@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <title>IGS - API</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1 class="alert alert-dark">
+            {{ page_title }}
+        </h1>
+        <div class="jumbotron">
+            <p>Links úteis</p>
+            <ul>
+                <li>
+                    <a target="_blank" href="http://127.0.0.1:8000/docs/">DOCUMENTAÇÃO</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://127.0.0.1:8000/">DRF API ROOT</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://127.0.0.1:8000/admin">ADMIN DJANGO</a>
+                </li>
+            </ul>
+        </div>
+        <div class="columns">
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>nome</th>
+                    <th>departamento</th>
+                    <th>registration</th>
+                    <th>data</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for value in employees %}
+                <tr class="">
+                    <td>{{ value.name }}</td>
+                    {% if not value.department %}
+                    <td>Nenhum</td>
+                    {% else %}
+                        <td>{{ value.department.name }}</td>
+                    {% endif %}
+                    <td>{{ value.registration }}</td>
+                    <td>{{ value.date }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
