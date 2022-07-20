@@ -4,7 +4,6 @@ RECURSOS / BIBLIOTECAS UTILIZADAS: </br>
 Django v3.2.1</br>
 Python v3.9.6</br>
 DRF v3.12</br>
-STRING DE CONEXÃO PARA O BANCO DE DADOS: "SECRET_KEY=django-insecure-=e$%nsjd%52edja*l)&_g9$i4!i0sork0gaxx%nhmu+gm2$(d2"
 </br>
 INSTRUÇÕES:</br>
 </br>
@@ -12,7 +11,7 @@ INSTRUÇÕES:</br>
 </br>
 2 - ABRA O PROJETO UTILIZANDO SEU EDITOR DE CÓDIGOS FAVORITO;</br>
 </br>
-3 - CRIE UM ARQUIVO .env E COLE A STRING DE CONEXÃO DO BANCO DE DADOS SEM ASPAS E ESPAÇOS.</br>
+3 - MOVA O ARQUIVO .env PARA A RAIZ DO PROJETO (arquivo encaminhado juntamente com o link do repositório)</br>
 </br>
 4 - CRIE E ATIVE O AMBIENTE VIRTUAL;</br>
 ----4.1 - python -m venv venv.</br>
